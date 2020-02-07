@@ -1,4 +1,4 @@
-# ianwalter/puppeteer
+# gadget-inc/puppeteer-action
 > A GitHub Action / Docker image for Puppeteer, the Headless Chrome Node API
 
 ## About
@@ -26,11 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Install
-        uses: ianwalter/puppeteer@v2.0.0
+        uses: gadget-inc/puppeteer-action@master
         with:
           args: yarn
       - name: Test
-        uses: ianwalter/puppeteer@v2.0.0
+        uses: gadget-inc/puppeteer-action@master
         with:
           args: yarn test
 ```
@@ -38,14 +38,14 @@ jobs:
 As a [Docker container][dockerUrl]:
 
 ```console
-docker pull ianwalter/puppeteer:2.0.0
+docker pull gadget-inc/puppeteer-action
 ```
 
 ## Related
 
 * [`@ianwalter/bff`][bffUrl] - Your friendly test runner/framework
-* [`@ianwalter/bff-puppeteer`][bffPuppeteerUrl] - A bff plugin to enable 
-  Puppeteer-based testing 
+* [`@ianwalter/bff-puppeteer`][bffPuppeteerUrl] - A bff plugin to enable
+  Puppeteer-based testing
 
 ## License
 
@@ -58,7 +58,7 @@ Created by [Ian Walter](https://iankwalter.com)
 [buildkiteUrl]: https://github.com/buildkite/docker-puppeteer
 [troubleshootingUrl]: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
 [actionsUrl]: https://github.com/features/actions
-[dockerUrl]: https://hub.docker.com/r/ianwalter/puppeteer
+[dockerUrl]: https://hub.docker.com/r/gadget-inc/puppeteer-action
 [bffUrl]: https://github.com/ianwalter/bff
 [bffPuppeteerUrl]: https://github.com/ianwalter/bff-puppeteer
 [licenseUrl]: https://github.com/ianwalter/docker-puppeteer/blob/master/LICENSE
